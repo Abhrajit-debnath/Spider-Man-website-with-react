@@ -1,10 +1,20 @@
 {
-    "routes": [
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
     { "src": "/", "dest": "/index.html" },
     { "src": "/about", "dest": "/index.html" },
     { "src": "/wallpaper", "dest": "/index.html" },
     { "src": "/gameplay", "dest": "/index.html" },
-    { "src": "/videos/(.*)", "dest": "/videos/$1" }
+    { "src": "/Videos/(.*)", "dest": "/Videos/$1" }
   ]
-    
 }
+
