@@ -1,0 +1,9 @@
+{
+    "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/index.html" },
+    { "src": "/wallpaper", "dest": "/index.html" },
+    { "src": "/gameplay", "dest": "/index.html" }
+  ]
+    
+}
